@@ -50,7 +50,7 @@ else:
 # 5 -> 2, 4
 # 8 -> 2, 4, 6, 8
 print("\nЗадача 4")
-n = int(input("Введите N: "))
+n = abs(int(input("Введите N: ")))
 if n > 2:
     for i in range(2, n + 1, 2):
         print(i, end = "")
