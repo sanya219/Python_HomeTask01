@@ -40,8 +40,25 @@ quarters = {
     2: "x > 0, y < 0",
     3: "x < 0, y < 0",
     4: "x < 0, y > 0"}
-quarter = int(input("Введите номер четверти:"))
+quarter = int(input("Введите номер четверти: "))
 if quarter < 1 or quarter > 4:
     print("Неверный номер четверти")
 else:
     print(quarters[quarter])
+
+# Задача 4. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+# 5 -> 2, 4
+# 8 -> 2, 4, 6, 8
+print("\nЗадача 4")
+n = int(input("Введите N: "))
+if n > 2:
+    for i in range(2, n + 1, 2):
+        print(i, end = "")
+        if i + 2 <= n:
+            print(", ", end = "")
+    print()
+else:
+    print("Таких числе нет")
+
+
+
